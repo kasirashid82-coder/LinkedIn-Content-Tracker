@@ -1,3 +1,6 @@
+h1{
+    color: #8501ba;
+}
 body{
     padding:20px;
     background-color:black;
@@ -12,7 +15,23 @@ label{
     display:block;
 }
 
-input{
-border:#8501ba;
+input, select {
+border:2px solid #8501ba;
+color: white;
+padding: 10px;
+background-color: black;
+
+}
+button{
+    background-color: #8501ba;
+    color: white;
+    border:2px solid #8501ba;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: #8501ba;
 
 }
