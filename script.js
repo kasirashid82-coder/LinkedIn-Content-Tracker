@@ -5,3 +5,4 @@
     event.preventDefault();
     console.log("Form submitted");
  });
+clear()
