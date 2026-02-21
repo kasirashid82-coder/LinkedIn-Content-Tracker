@@ -16,7 +16,8 @@ function showPosts() {
     "Topic: " + posts[i].topic + "<br>" +
     "Date: " + posts[i].date + "<br>" +
     "Reach: " + posts[i].reach + " | Engagement: " + posts[i].engagement + "<br>" +
-    "Connections: " + posts[i].connections;
+    "Connections: " + posts[i].connections +  "<br>" +
+    "<button class='delete-btn' data-index='" + i + "'>Delete</button>";
          postList.appendChild(postDiv);
 postDiv.className = "post-card";
     }
@@ -58,3 +59,14 @@ showPosts();
 console.log(posts);
 });
 showPosts();
+
+document.querySelector("#posts-list").addEventListener("click", function(event) {
+    if (event.target.classList.contains("delete-btn")) {
+        const index = event.target.dataset.index;
+        let posts = JSON.parse(localStorage.getItem("posts"));
+posts.splice(index, 1);
+localStorage.setItem("posts", JSON.stringify(posts));
+showPosts();
+        console.log("Delete post at index:", index);
+    }
+});
