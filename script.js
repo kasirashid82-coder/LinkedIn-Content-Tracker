@@ -11,6 +11,14 @@
     const engagement = document.querySelector("#engagement").value;
     const connectionCount = document.querySelector("#connection-count").value;
     
-    console.log(postDate, hook, topic, reach, engagement, connectionCount);
-});
+    const post = {
+    date: postDate,
+    hook: hook,
+    topic: topic,
+    reach: reach,
+    engagement: engagement,
+    connections: connectionCount
+};
 
+console.log(post);
+});
