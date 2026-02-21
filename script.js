@@ -18,7 +18,15 @@
     reach: reach,
     engagement: engagement,
     connections: connectionCount
-};
 
-console.log(post);
+};
+let posts = localStorage.getItem("posts");
+if (posts === null) {
+    posts = [];
+} else {
+    posts = JSON.parse(posts);
+}
+posts.push(post);
+localStorage.setItem("posts", JSON.stringify(posts));
+console.log(posts);
 });
