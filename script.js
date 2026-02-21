@@ -1,15 +1,19 @@
 function showPosts() {
-     let posts = localStorage.getItem("posts");
+    let posts = localStorage.getItem("posts");
     if (posts === null) {
         posts = [];
     } else {
         posts = JSON.parse(posts);
     }
-}
     
     const postList = document.querySelector("#post-list");
     postList.innerHTML = "";
+    
+    for (let i = 0; i < posts.length; i++) {
+        console.log(posts[i]);
+    }
 }
+
 
 const form = document.querySelector("form")
  console.log(form)
@@ -41,5 +45,7 @@ if (posts === null) {
 }
 posts.push(post);
 localStorage.setItem("posts", JSON.stringify(posts));
+showPosts();
 console.log(posts);
 });
+showPosts();
