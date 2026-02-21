@@ -10,7 +10,15 @@ function showPosts() {
     postList.innerHTML = "";
     
     for (let i = 0; i < posts.length; i++) {
-        console.log(posts[i]);
+        const postDiv = document.createElement("div");
+         postDiv.innerHTML = 
+          "<strong>" + posts[i].hook + "</strong><br>" +
+    "Topic: " + posts[i].topic + "<br>" +
+    "Date: " + posts[i].date + "<br>" +
+    "Reach: " + posts[i].reach + " | Engagement: " + posts[i].engagement + "<br>" +
+    "Connections: " + posts[i].connections;
+         postList.appendChild(postDiv);
+
     }
 }
 
