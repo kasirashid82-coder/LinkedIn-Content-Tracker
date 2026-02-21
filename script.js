@@ -1,4 +1,17 @@
- const form = document.querySelector("form")
+function showPosts() {
+     let posts = localStorage.getItem("posts");
+    if (posts === null) {
+        posts = [];
+    } else {
+        posts = JSON.parse(posts);
+    }
+}
+    
+    const postList = document.querySelector("#post-list");
+    postList.innerHTML = "";
+}
+
+const form = document.querySelector("form")
  console.log(form)
 
  form.addEventListener("submit", function(event)  {
