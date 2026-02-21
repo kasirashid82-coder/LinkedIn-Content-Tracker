@@ -1,6 +1,9 @@
 h1{
     color: #8501ba;
 }
+h2{
+    color:#8501ba
+}
 body{
     padding:20px;
     background-color:black;
@@ -34,4 +37,14 @@ button:hover{
     background-color: white;
     color: #8501ba;
 
+}
+#posts-list {
+    margin-top: 30px;
+}
+
+.post-card {
+    border: 1px solid #8501ba;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }

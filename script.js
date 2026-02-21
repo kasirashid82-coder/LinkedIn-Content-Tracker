@@ -18,8 +18,9 @@ function showPosts() {
     "Reach: " + posts[i].reach + " | Engagement: " + posts[i].engagement + "<br>" +
     "Connections: " + posts[i].connections;
          postList.appendChild(postDiv);
-
+postDiv.className = "post-card";
     }
+
 }
 
 
