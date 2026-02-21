@@ -6,7 +6,7 @@ function showPosts() {
         posts = JSON.parse(posts);
     }
     
-    const postList = document.querySelector("#post-list");
+    const postList = document.querySelector("#posts-list");
     postList.innerHTML = "";
     
     for (let i = 0; i < posts.length; i++) {
