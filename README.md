@@ -25,7 +25,7 @@
 	•	CSS
 	•	Vanilla JavaScript
 
-##Purpose
+## Purpose
 
 # Instead of relying on intuition alone, this tracker enables structured analysis of:
 	•	Hook strength
